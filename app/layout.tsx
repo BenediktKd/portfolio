@@ -4,21 +4,21 @@ import { Toaster } from '@/components/ui/sonner'
 import { Providers } from '@/components/providers'
 
 export const metadata: Metadata = {
-  title: 'Benedikt Kudryavtsev - Data Engineer | Analytics Engineer',
-  description: 'Data Engineer specializing in enterprise data platforms. 107 dbt models, 4 countries, BigQuery & Cloud architecture. Building data infrastructure that scales.',
-  keywords: ['Data Engineer', 'Analytics Engineer', 'dbt', 'BigQuery', 'GCP', 'Data Platform', 'ETL', 'Chile'],
+  title: 'Benedikt Kudryavtsev - Full Stack Data Engineer',
+  description: 'Data Engineer | Analytics | Full Stack Developer',
+  keywords: ['Data Engineer', 'Analytics Engineer', 'Full Stack', 'dbt', 'BigQuery', 'GCP', 'Next.js', 'React', 'Chile'],
   authors: [{ name: 'Benedikt Kudryavtsev' }],
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    title: 'Benedikt Kudryavtsev - Data Engineer',
-    description: 'Enterprise Data Platform Architect | 107 dbt models | 4 countries | BigQuery & Cloud',
+    locale: 'es_CL',
+    title: 'Benedikt Kudryavtsev - Full Stack Data Engineer',
+    description: 'Data Engineer | Analytics | Full Stack Developer',
     siteName: 'Benedikt Kudryavtsev Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Benedikt Kudryavtsev - Data Engineer',
-    description: 'Enterprise Data Platform Architect | 107 dbt models | 4 countries',
+    title: 'Benedikt Kudryavtsev - Full Stack Data Engineer',
+    description: 'Data Engineer | Analytics | Full Stack Developer',
   },
   robots: {
     index: true,

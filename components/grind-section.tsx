@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import Image from "next/image"
 import { useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Play, ChevronLeft, ChevronRight, Trophy, Target, GripHorizontal } from "lucide-react"
@@ -439,10 +440,12 @@ const handleMouseDown = (e: React.MouseEvent) => {
                 <div className="relative p-6 h-full flex flex-col">
                   <h3 className="text-2xl font-bold mb-4 text-blue-400">Mathematical work </h3>
                   <div className="relative flex-1 bg-zinc-900 rounded-lg overflow-hidden">
-                    <img
+                    <Image
                       src={mathImages[currentImageIndex] || "/placeholder.svg"}
                       alt={`Math board ${currentImageIndex + 1}`}
-                      className={`w-full h-full object-cover ${
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className={`object-cover ${
                         mathImages[currentImageIndex] === "/m1.jpg" ? "sm:object-center object-left" : ""
                       }`}
                     />

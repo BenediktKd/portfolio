@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { useLanguage } from "@/hooks/use-language"
@@ -121,9 +122,12 @@ export function CreativeHero({ name = "Benedikt", profileImage = "/pfpicon.png",
               boxShadow: `0 0 ${30 + glowIntensity * 15}px rgba(51, 155, 94, ${0.3 + glowIntensity * 0.1})`
             }}
           >
-            <img
+            <Image
               src={profileImage}
               alt={name}
+              width={320}
+              height={320}
+              priority
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
             />
 

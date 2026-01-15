@@ -5,8 +5,8 @@ const nextConfig = {
     dirs: ['app', 'components', 'lib', 'hooks'],
   },
   images: {
-    // Keep unoptimized for now - can optimize later with proper image setup
-    unoptimized: true,
+    unoptimized: false,
+    formats: ['image/avif', 'image/webp'],
   },
 }
 

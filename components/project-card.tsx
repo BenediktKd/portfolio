@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight, Github } from "lucide-react"
 import { motion } from "framer-motion"
@@ -40,10 +41,12 @@ export function ProjectCard({ title, description, tags, image, demoUrl, repoUrl,
         <div className="relative h-full flex flex-col">
           <div className="relative overflow-hidden h-56">
             <div className="absolute inset-0 bg-gradient-to-b from-phthalo-500/20 to-phthalo-700/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-            <img
+            <Image
               src={image || "/placeholder.svg"}
               alt={title}
-              className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? "scale-105" : "scale-100"}`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className={`object-cover transition-transform duration-700 ${isHovered ? "scale-105" : "scale-100"}`}
             />
           </div>
 

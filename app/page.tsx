@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
@@ -156,10 +157,12 @@ export default function Portfolio() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-emerald-500/20 to-cyan-700/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900/50">
-                <img
+                <Image
                   src={CONFIG.profileImage}
                   alt={CONFIG.name}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full p-6">
@@ -265,8 +268,8 @@ export default function Portfolio() {
 
           {/* Full Stack Flow - Animated Header */}
           <div className="mt-12 mb-16">
-            <div className="relative max-w-4xl mx-auto">
-              <div className="flex items-center justify-between px-4">
+            <div className="relative max-w-4xl mx-auto px-4 overflow-x-auto">
+              <div className="flex items-center justify-center gap-2 sm:gap-4 min-w-max mx-auto">
                 {[
                   { label: 'Data', icon: Database, color: 'emerald', tools: 'BigQuery, dbt' },
                   { label: 'Transform', icon: Cpu, color: 'cyan', tools: 'Python, SQL' },
@@ -282,14 +285,14 @@ export default function Portfolio() {
                       transition={{ delay: i * 0.1 }}
                       viewport={{ once: true }}
                     >
-                      <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center ${
+                      <div className={`w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center ${
                         step.color === 'emerald' ? 'bg-emerald-500/20 border-emerald-500/30' :
                         step.color === 'cyan' ? 'bg-cyan-500/20 border-cyan-500/30' :
                         step.color === 'blue' ? 'bg-blue-500/20 border-blue-500/30' :
                         step.color === 'purple' ? 'bg-purple-500/20 border-purple-500/30' :
                         'bg-pink-500/20 border-pink-500/30'
                       } border`}>
-                        <step.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${
+                        <step.icon className={`w-5 h-5 sm:w-7 sm:h-7 ${
                           step.color === 'emerald' ? 'text-emerald-400' :
                           step.color === 'cyan' ? 'text-cyan-400' :
                           step.color === 'blue' ? 'text-blue-400' :
@@ -297,7 +300,7 @@ export default function Portfolio() {
                           'text-pink-400'
                         }`} />
                       </div>
-                      <span className={`mt-2 text-xs sm:text-sm font-medium ${
+                      <span className={`mt-1 sm:mt-2 text-[10px] sm:text-sm font-medium ${
                         step.color === 'emerald' ? 'text-emerald-400' :
                         step.color === 'cyan' ? 'text-cyan-400' :
                         step.color === 'blue' ? 'text-blue-400' :
@@ -309,13 +312,13 @@ export default function Portfolio() {
 
                     {i < arr.length - 1 && (
                       <motion.div
-                        className="flex-shrink-0 mx-1 sm:mx-3"
+                        className="flex-shrink-0"
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: i * 0.1 + 0.15 }}
                         viewport={{ once: true }}
                       >
-                        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-600" />
+                        <ArrowRight className="w-3 h-3 sm:w-5 sm:h-5 text-zinc-600" />
                       </motion.div>
                     )}
                   </div>
