@@ -183,42 +183,42 @@ export default function Portfolio() {
                 <p className="text-lg text-zinc-300 mt-4">{t('aboutDescription3')}</p>
 
                 {/* Full Stack Flow Indicator */}
-                <div className="mt-6 p-4 rounded-xl bg-zinc-800/30 border border-zinc-700/50">
+                <div className="mt-6 p-3 sm:p-4 rounded-xl bg-zinc-800/30 border border-zinc-700/50 overflow-x-auto">
                   <div className="text-xs text-zinc-500 mb-3 uppercase tracking-wider">Stack Completo</div>
-                  <div className="flex items-center justify-between gap-1 sm:gap-2">
+                  <div className="flex items-center justify-center gap-1 sm:gap-2 min-w-max">
                     <div className="flex flex-col items-center gap-1">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-emerald-500/20">
-                        <Database className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400" />
+                      <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-emerald-500/20">
+                        <Database className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-emerald-400" />
                       </div>
-                      <span className="text-[10px] sm:text-xs text-zinc-400">Data</span>
+                      <span className="text-[9px] sm:text-xs text-zinc-400">Data</span>
                     </div>
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
+                    <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
                     <div className="flex flex-col items-center gap-1">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-cyan-500/20">
-                        <Cpu className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
+                      <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-cyan-500/20">
+                        <Cpu className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-cyan-400" />
                       </div>
-                      <span className="text-[10px] sm:text-xs text-zinc-400">Transform</span>
+                      <span className="text-[9px] sm:text-xs text-zinc-400">Transform</span>
                     </div>
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
+                    <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
                     <div className="flex flex-col items-center gap-1">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-blue-500/20">
-                        <Server className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
+                      <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-blue-500/20">
+                        <Server className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-blue-400" />
                       </div>
-                      <span className="text-[10px] sm:text-xs text-zinc-400">APIs</span>
+                      <span className="text-[9px] sm:text-xs text-zinc-400">APIs</span>
                     </div>
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
+                    <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
                     <div className="flex flex-col items-center gap-1">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-purple-500/20">
-                        <Layout className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
+                      <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-purple-500/20">
+                        <Layout className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-purple-400" />
                       </div>
-                      <span className="text-[10px] sm:text-xs text-zinc-400">Frontend</span>
+                      <span className="text-[9px] sm:text-xs text-zinc-400">Frontend</span>
                     </div>
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
+                    <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-zinc-600 flex-shrink-0" />
                     <div className="flex flex-col items-center gap-1">
-                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-pink-500/20">
-                        <User className="w-4 h-4 sm:w-5 sm:h-5 text-pink-400" />
+                      <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-pink-500/20">
+                        <User className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-pink-400" />
                       </div>
-                      <span className="text-[10px] sm:text-xs text-zinc-400">User</span>
+                      <span className="text-[9px] sm:text-xs text-zinc-400">User</span>
                     </div>
                   </div>
                 </div>
