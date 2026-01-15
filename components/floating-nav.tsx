@@ -54,36 +54,34 @@ export function FloatingNav() {
         animate={{ y: isVisible ? 0 : -100 }}
         transition={{ duration: 0.3 }}
       >
-        <div className={`relative px-4 py-3 rounded-full bg-zinc-800/80 backdrop-blur-md border border-zinc-700/50 shadow-lg ${isMobile ? 'w-[calc(100vw-3rem)] max-w-sm' : ''}`}>
+        <div className="relative px-4 py-3 rounded-full bg-zinc-800/80 backdrop-blur-md border border-zinc-700/50 shadow-lg">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-phthalo-500/20 to-phthalo-700/20 rounded-full blur opacity-50"></div>
 
           {isMobile ? (
-            <div className="relative flex items-center justify-between gap-2">
-              <Link href="/" className="font-bold text-base shrink-0">
+            <div className="relative flex items-center justify-center gap-3">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={toggleLanguage}
+                className="text-zinc-400 hover:text-white px-2"
+              >
+                <Globe className="h-4 w-4 mr-1" />
+                <span className="text-xs font-medium">{language.toUpperCase()}</span>
+              </Button>
+              <Link href="/" className="font-bold text-base">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-600">
                   Benedikt
                 </span>
                 <span className="text-white">Engineer</span>
               </Link>
-              <div className="flex items-center gap-1">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={toggleLanguage}
-                  className="text-zinc-400 hover:text-white px-2"
-                >
-                  <Globe className="h-4 w-4 mr-1" />
-                  <span className="text-xs font-medium">{language.toUpperCase()}</span>
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-zinc-400 hover:text-white hover:bg-zinc-700/50 shrink-0 h-8 w-8"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-                </Button>
-              </div>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-zinc-400 hover:text-white hover:bg-zinc-700/50 h-8 w-8"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              </Button>
             </div>
           ) : (
             <div className="relative flex items-center gap-1">
