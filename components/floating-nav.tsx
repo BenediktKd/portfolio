@@ -58,17 +58,8 @@ export function FloatingNav() {
           <div className="absolute -inset-0.5 bg-gradient-to-r from-phthalo-500/20 to-phthalo-700/20 rounded-full blur opacity-50"></div>
 
           {isMobile ? (
-            <div className="relative flex items-center justify-center gap-3">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={toggleLanguage}
-                className="text-zinc-400 hover:text-white px-2"
-              >
-                <Globe className="h-4 w-4 mr-1" />
-                <span className="text-xs font-medium">{language.toUpperCase()}</span>
-              </Button>
-              <Link href="/" className="font-bold text-base">
+            <div className="relative flex items-center justify-between min-w-[280px]">
+              <Link href="/" className="font-bold text-lg">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-600">
                   Benedikt
                 </span>
@@ -77,10 +68,10 @@ export function FloatingNav() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="text-zinc-400 hover:text-white hover:bg-zinc-700/50 h-8 w-8"
+                className="text-zinc-400 hover:text-white hover:bg-zinc-700/50"
                 onClick={() => setIsOpen(!isOpen)}
               >
-                {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+                {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </div>
           ) : (

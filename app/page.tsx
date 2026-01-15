@@ -63,8 +63,8 @@ export default function Portfolio() {
       <ScrollProgress />
       <FloatingNav />
 
-      {/* Language Toggle - Fixed Position (hidden on mobile, shown in FloatingNav) */}
-      <div className="fixed top-4 right-4 z-50 hidden md:block">
+      {/* Language Toggle - Fixed Position */}
+      <div className="fixed top-4 right-4 z-50">
         <LanguageToggle />
       </div>
 
