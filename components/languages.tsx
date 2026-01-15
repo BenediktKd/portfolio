@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Globe } from "lucide-react"
 import { useLanguage } from "@/hooks/use-language"
@@ -9,21 +10,21 @@ const languages = [
   {
     nameKey: 'spanish' as const,
     levelKey: 'native' as const,
-    flag: '🇪🇸',
+    flagUrl: 'https://flagcdn.com/es.svg',
     color: 'from-red-500/20 to-yellow-500/20 border-red-500/30',
     textColor: 'text-red-400',
   },
   {
     nameKey: 'russian' as const,
     levelKey: 'native' as const,
-    flag: '🇷🇺',
+    flagUrl: 'https://flagcdn.com/ru.svg',
     color: 'from-blue-500/20 to-red-500/20 border-blue-500/30',
     textColor: 'text-blue-400',
   },
   {
     nameKey: 'english' as const,
     levelKey: 'advanced' as const,
-    flag: '🇬🇧',
+    flagUrl: 'https://flagcdn.com/gb.svg',
     color: 'from-blue-500/20 to-red-500/20 border-blue-500/30',
     textColor: 'text-cyan-400',
   },
@@ -54,7 +55,15 @@ export function Languages() {
                 <div className={`relative overflow-hidden rounded-xl bg-gradient-to-br ${lang.color} backdrop-blur-sm border p-5 min-w-[140px] transition-all duration-300`}>
                   <div className="flex flex-col items-center gap-3">
                     {/* Flag */}
-                    <span className="text-4xl">{lang.flag}</span>
+                    <div className="w-12 h-9 relative rounded overflow-hidden shadow-md">
+                      <Image
+                        src={lang.flagUrl}
+                        alt={lang.nameKey}
+                        fill
+                        className="object-cover"
+                        unoptimized
+                      />
+                    </div>
 
                     {/* Language name */}
                     <span className="text-lg font-semibold text-white">
