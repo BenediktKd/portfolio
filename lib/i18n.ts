@@ -8,7 +8,7 @@ export const translations = {
     // About
     aboutTitle: "Sobre Mí",
     aboutSubtitle: "Mi experiencia y especialización",
-    aboutDescription1: "Full Stack Data Engineer con 3+ años de experiencia construyendo plataformas de datos end-to-end en GCP. Especialista en pipelines ETL/ELT serverless, arquitectura dbt, modelado dimensional y desarrollo de aplicaciones web modernas con Next.js y React.",
+    aboutDescription1: "Full Stack Data Engineer con 4+ años de experiencia construyendo plataformas de datos end-to-end en GCP. Especialista en pipelines ETL/ELT serverless, arquitectura dbt, modelado dimensional y desarrollo de aplicaciones web modernas con Next.js y React.",
     aboutDescription2: "Cubro el stack completo: desde infraestructura cloud y orquestación de pipelines hasta APIs REST y interfaces de usuario. Experiencia en métricas SaaS (CAC, CLTV, NRR) y habilitación de analytics self-service.",
     aboutDescription3: "Este portfolio es prueba de mi stack full stack: lo construí con Next.js 15, React 19, TypeScript y Tailwind CSS. En data: BigQuery, dbt, Python, Cloud Run. Mi enfoque: soluciones end-to-end que conectan datos con usuarios.",
     name: "Nombre",
@@ -131,7 +131,7 @@ export const translations = {
     // About
     aboutTitle: "About Me",
     aboutSubtitle: "My background and expertise",
-    aboutDescription1: "Full Stack Data Engineer with 3+ years of experience building end-to-end data platforms on GCP. Specialist in serverless ETL/ELT pipelines, dbt architecture, dimensional modeling, and modern web application development with Next.js and React.",
+    aboutDescription1: "Full Stack Data Engineer with 4+ years of experience building end-to-end data platforms on GCP. Specialist in serverless ETL/ELT pipelines, dbt architecture, dimensional modeling, and modern web application development with Next.js and React.",
     aboutDescription2: "I cover the complete stack: from cloud infrastructure and pipeline orchestration to REST APIs and user interfaces. Experience in SaaS metrics (CAC, CLTV, NRR) and enabling self-service analytics.",
     aboutDescription3: "This portfolio is proof of my full stack capabilities: I built it with Next.js 15, React 19, TypeScript, and Tailwind CSS. On data: BigQuery, dbt, Python, Cloud Run. My focus: end-to-end solutions that connect data to users.",
     name: "Name",

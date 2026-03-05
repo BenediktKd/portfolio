@@ -128,7 +128,7 @@ export function CreativeHero({ name = "Benedikt", profileImage = "/pfpicon.png",
               width={320}
               height={320}
               priority
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+              className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-110"
             />
 
             {/* Overlay gradient */}
